@@ -6,7 +6,7 @@
 import {timeline} from 'wix-animations'
 
 // Function that runs when all the elements on the page have finished loading
-// ------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------
 $w.onReady(function () {
 	
 	// Define initial constants
