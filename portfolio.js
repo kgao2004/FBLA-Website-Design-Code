@@ -4,13 +4,13 @@
 
 
 // Imports
-// --------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------
 import {timeline} from 'wix-animations';
 import wixWindow from 'wix-window';
 	
 
 // Function that runs when all the elements on the page have finished loading
-// --------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------
 $w.onReady(function () {
 
 	// Function to rotate the images
@@ -148,8 +148,8 @@ $w.onReady(function () {
 
 	// Menu
 	const homeButton = $w('#button8');
-    const mikeAndersText = $w('#text12');
-    const archPhotText = $w('#text13');
+    	const mikeAndersText = $w('#text12');
+    	const archPhotText = $w('#text13');
 	const menu = $w('#horizontalMenu3')
 	const topStrip = $w('#columnStrip1');
 	const menuBox = $w('#box12');
@@ -377,39 +377,39 @@ $w.onReady(function () {
 	// --------------------------------------------------------------------------------------------
 	// When mouse is on top strip, expand mike anderson and menu, compress arch. photography 
 	topStrip.onMouseIn(() => {
-        timeline()
-            .add(mikeAndersText, {scaleX: 1.07, duration: 500, easing: 'easeOutCirc'})
-            .add(archPhotText, {scaleX: 0.93, duration: 500, easing: 'easeOutCirc'}, "-=500")
-			.add(menu, {scale: 1.05, duration: 500, easing: 'easeOutCirc'}, "-=500")
-            .play()
-    })
+		timeline()
+		    .add(mikeAndersText, {scaleX: 1.07, duration: 500, easing: 'easeOutCirc'})
+		    .add(archPhotText, {scaleX: 0.93, duration: 500, easing: 'easeOutCirc'}, "-=500")
+		    .add(menu, {scale: 1.05, duration: 500, easing: 'easeOutCirc'}, "-=500")
+		    .play()
+    	})
 
 	// When mouse moves off top strip, reset animations
-    topStrip.onMouseOut(() => {
-        timeline()
-            .add(mikeAndersText, {scaleX: 1, duration: 500, easing: 'easeOutCirc'})
-            .add(archPhotText, {scaleX: 1, duration: 500, easing: 'easeOutCirc'}, "-=500")
-			.add(menu, {scale: 1, duration: 500, easing: 'easeOutCirc'}, "-=500")
-            .play()
-    })
+    	topStrip.onMouseOut(() => {
+		timeline()
+		    .add(mikeAndersText, {scaleX: 1, duration: 500, easing: 'easeOutCirc'})
+		    .add(archPhotText, {scaleX: 1, duration: 500, easing: 'easeOutCirc'}, "-=500")
+		    .add(menu, {scale: 1, duration: 500, easing: 'easeOutCirc'}, "-=500")
+		    .play()
+    	})
 
 	// When mouse is on menu box, expand mike anderson and menu, compress arch. photography
 	menuBox.onMouseIn(() => {
-        timeline()
-            .add(mikeAndersText, {scaleX: 1.07, duration: 500, easing: 'easeOutCirc'})
-            .add(archPhotText, {scaleX: 0.93, duration: 500, easing: 'easeOutCirc'}, "-=500")
-			.add(menu, {scale: 1.05, duration: 500, easing: 'easeOutCirc'}, "-=500")
-            .play()
-    })
+		timeline()
+		    .add(mikeAndersText, {scaleX: 1.07, duration: 500, easing: 'easeOutCirc'})
+		    .add(archPhotText, {scaleX: 0.93, duration: 500, easing: 'easeOutCirc'}, "-=500")
+		    .add(menu, {scale: 1.05, duration: 500, easing: 'easeOutCirc'}, "-=500")
+		    .play()
+    	})
 
 	// When mouse moves off menu box, reset animations
-    menuBox.onMouseOut(() => {
-        timeline()
-            .add(mikeAndersText, {scaleX: 1, duration: 500, easing: 'easeOutCirc'})
-            .add(archPhotText, {scaleX: 1, duration: 500, easing: 'easeOutCirc'}, "-=500")
-			.add(menu, {scale: 1, duration: 500, easing: 'easeOutCirc'}, "-=500")
-            .play()
-    })
+    	menuBox.onMouseOut(() => {
+		timeline()
+		    .add(mikeAndersText, {scaleX: 1, duration: 500, easing: 'easeOutCirc'})
+		    .add(archPhotText, {scaleX: 1, duration: 500, easing: 'easeOutCirc'}, "-=500")
+		    .add(menu, {scale: 1, duration: 500, easing: 'easeOutCirc'}, "-=500")
+		    .play()
+    	})
 
 	
 	// Buttons animations
