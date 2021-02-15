@@ -9,14 +9,14 @@ import { timeline } from 'wix-animations';
 // ------------------------------------------------------------------------------------------------
 $w.onReady(function () {
 
-	// Define constants for menu items
+    // Define constants for menu items
     const header = $w('#header1');
     const homeButton = $w('#button3');
     const mikeAndersText = $w('#text4');
     const archPhotText = $w('#text3');
     const menu = $w('#horizontalMenu1');
 
-	// When mouse is on the header, expand mike anderson and menu, compress arch. photography
+    // When mouse is on the header, expand mike anderson and menu, compress arch. photography
     header.onMouseIn(() => {
         timeline()
             .add(mikeAndersText, {scaleX: 1.07, duration: 500, easing: 'easeOutCirc'})
@@ -25,7 +25,7 @@ $w.onReady(function () {
             .play()
     })    
 
-	// When mouse moves off header, reset animations
+    // When mouse moves off header, reset animations
     header.onMouseOut(() => {
         timeline()
             .add(mikeAndersText, {scaleX: 1, duration: 500, easing: 'easeOutCirc'})
