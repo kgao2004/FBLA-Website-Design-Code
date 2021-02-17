@@ -69,6 +69,32 @@ $w.onReady(function () {
 
 	// Reset animations
 	const reset = {y: 0, x: 0, scale: 1, duration: 150, easing: 'easeOutCirc'};
+	
+	// Constants for full gallery box
+	const fullGalBox = $w('#box10'); 
+	const fullGalText = $w('#text11');
+
+	
+	// Full Gallery Box Animation
+	// --------------------------------------------------------------------------------------------
+	
+	// When mouse is on full gallery box, expand the text
+	fullGalBox.onMouseIn(() => {
+
+		timeline()
+			.add(fullGalText, {scale: 1.05, duration: 600, easing: 'easeOutCirc',})
+			.play()
+
+	})
+
+	// When mouse moves off full gallery box, reset text size
+	fullGalBox.onMouseOut(() => {
+
+		timeline()
+			.add(fullGalText, {scale: 1, duration: 600, easing: 'easeOutCirc'})
+			.play()
+
+	})
 
 	
 	// Menu animations
